@@ -1,0 +1,11 @@
+body {
+  background-color: #151515;
+}
+
+div:focus {
+  outline: none !important;
+}
+
+.copyright a, h5 {
+  color: green;
+}
