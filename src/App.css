@@ -6,6 +6,6 @@ div:focus {
   outline: none !important;
 }
 
-.copyright a, h5 {
-  color: green;
+.application {
+	/*position: fixed;*/
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Tablero from './Tablero';
+import Footer from './Footer';
 import './App.css';
 import construirBaraja from './utils/construirBaraja';
 
@@ -25,7 +26,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="application">
         <Header 
           numeroDeIntentos={this.state.numeroDeIntentos}
           resetearPartida={() => this.resetearPartida()}
@@ -37,16 +38,7 @@ class App extends Component {
           parejaSeleccionada={this.state.parejaSeleccionada}
           seleccionarCarta={(carta) => this.seleccionarCarta(carta)}
         />
-        <div className="copyright">
-          <p><a href="https://github.com/frames75/juego-de-memoria-reactjs" 
-          target="_blank" rel="noopener noreferrer">
-            Código fuente de la aplicación
-          </a></p>
-          <h5>© 2021 Copyright - <a href="https://www.frames75.com/"
-            target="_blank" rel="noopener noreferrer">
-            Frames75
-          </a></h5>
-        </div>
+        <Footer />
       </div>
     );
   }

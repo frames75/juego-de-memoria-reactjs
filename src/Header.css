@@ -16,7 +16,7 @@ header {
 
 .intentos {
   position: absolute;
-  right: 13%;
+  left: 550px; 
   top: 120px;
   font-size: 20px;
   padding: 10px;
@@ -39,15 +39,6 @@ header {
   font-size: 20px;
   padding: 1px;
   width: 70px;
-}
-
-.darkmode {
-  position: absolute;
-  left: 25%;
-  top: 120px;
-  font-size: 20px;
-  padding: 10px;
-  color: #fff;
 }
 
 button.boton-reiniciar {

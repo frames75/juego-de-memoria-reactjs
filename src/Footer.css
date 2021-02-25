@@ -1,0 +1,21 @@
+.footer {
+	position: fixed;
+  display: flex;
+  color: green;
+  margin-left: 10px;
+}
+
+.source-code {
+	position: relative;
+  color: green;
+}
+
+.frames75 {
+	position: relative;
+  left: 250px;
+  color: green;
+}
+
+a, h5 {
+  color: green;	
+}
