@@ -6,7 +6,7 @@ export default class Header extends Component {
     return (
       <header> 
         <div className="titulo">
-          <h2>Juego de Memoria</h2>
+          <h2>Juego de Memoria Emparejar</h2>
         </div>
         <div>
             <button className="boton-reiniciar" onClick={this.props.resetearPartida}>
@@ -21,7 +21,10 @@ export default class Header extends Component {
           />
         </div>
         <div className="intentos">
-          Intentos: {this.props.numeroDeIntentos}
+          Intentos:&nbsp;&nbsp;
+          <b className="numIntentos">
+            {this.props.numeroDeIntentos}
+          </b>
         </div>
       </header>
     );

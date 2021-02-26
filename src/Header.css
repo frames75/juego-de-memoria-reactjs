@@ -1,7 +1,7 @@
 header {
   height: 180px;
-  width: 100%;
-  border: 1px solid black;
+  width: 710px;
+  border: 0px solid black;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;;
@@ -9,18 +9,24 @@ header {
 }
 
 .titulo {
+  width: 100%;
   font-size: 25px;
   padding: 10px;
   color: #fff;
+  background-color: maroon;
 }
 
 .intentos {
   position: absolute;
-  left: 550px; 
-  top: 120px;
+  left: 560px; 
+  top: 116px;
   font-size: 20px;
   padding: 10px;
   color: #fff;  
+}
+
+.numIntentos {
+  font-size: 1.2em;
 }
 
 .labelTiempo {

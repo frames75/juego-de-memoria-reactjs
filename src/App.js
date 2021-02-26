@@ -44,6 +44,7 @@ class App extends Component {
   }
 
   seleccionarCarta(carta) {
+    console.log(carta.fueAdivinida)
     if (
       this.state.estaComparando ||
       this.state.parejaSeleccionada.indexOf(carta) > -1 ||

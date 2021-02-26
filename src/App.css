@@ -8,4 +8,7 @@ div:focus {
 
 .application {
 	/*position: fixed;*/
+	position: relative;
+	color: black;
+	width: 99%;
 }
