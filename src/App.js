@@ -1,4 +1,3 @@
-// Esto es el branch 'intentos-final'
 import React, { Component } from 'react';
 import Header from './Header';
 import Tablero from './Tablero';
@@ -45,11 +44,10 @@ class App extends Component {
   }
 
   seleccionarCarta(carta) {
-    console.log(carta.fueAdivinida)
     if (
       this.state.estaComparando ||
       this.state.parejaSeleccionada.indexOf(carta) > -1 ||
-      carta.fueAdivinida
+      carta.fueAdivinada
     ) {
       return;
     }
