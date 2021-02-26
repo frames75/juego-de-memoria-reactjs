@@ -1,3 +1,4 @@
+// Esto es el branch 'intentos-final'
 import React, { Component } from 'react';
 import Header from './Header';
 import Tablero from './Tablero';
