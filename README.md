@@ -16,6 +16,6 @@ Una vez que hayas instalado Node.js sigue los siguientes pasos:
 4. Ejecuta el comando: `npm start` para correr la aplicación.
 5. Abre en tu navegador el siguiente URL [http://localhost:3000](http://localhost:3000).
 
-Si tienes alguna duda [contáctanos](https://www.frames75.com/contacto/).
+Si tienes alguna duda puedes [contactarme](https://www.frames75.com/contacto/).
 
 ![image](https://frtesas.s3.amazonaws.com/some-folder/juego-de-memoria-react.png)

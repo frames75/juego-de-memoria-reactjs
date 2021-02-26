@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Tablero from './Tablero';
 import Footer from './Footer';
+import PopupFinal from './PopupFinal';
 import './App.css';
 import construirBaraja from './utils/construirBaraja';
 
@@ -12,7 +13,8 @@ const getEstadoInicial = () => {
     parejaSeleccionada: [],
     estaComparando: false,
     numeroDeIntentos: 0,
-    tiempo: 1000
+    tiempo: 1000,
+    showPopup: false
   };
 }
 
@@ -22,6 +24,7 @@ class App extends Component {
     this.state = getEstadoInicial();
 
     this.handleChangeTiempo = this.handleChangeTiempo.bind(this);
+    this.handlePopup = this.handlePopup.bind(this);
   }
 
   render() {
@@ -39,6 +42,13 @@ class App extends Component {
           seleccionarCarta={(carta) => this.seleccionarCarta(carta)}
         />
         <Footer />
+        {(this.state.showPopup && !this.state.estaComparando) ? 
+          <PopupFinal
+              intentos={this.state.numeroDeIntentos}
+              closePopup={this.handlePopup}
+          />
+          : null 
+        }
       </div>
     );
   }
@@ -93,13 +103,20 @@ class App extends Component {
     if (
       baraja.filter((carta) => !carta.fueAdivinada).length === 0
     ) {
-      alert(`Terminaste en ${this.state.numeroDeIntentos} intentos!`);
+      this.handlePopup();
+      // alert(`Terminaste en ${this.state.numeroDeIntentos} intentos!`);
     }
   }
 
   handleChangeTiempo(e) {
     this.setState({
       tiempo: e.target.value
+    });
+  }
+
+  handlePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup
     });
   }
 
